@@ -1,0 +1,38 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meditation</title>
+    <link rel="stylesheet" href="{% static 'css/meditation.css' %}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="{% static 'images/SweetDreamsLogo.png' %}" alt="Sweet Dreams Logo">
+            </div>
+            <div class="title">
+                Meditation
+            </div>
+            <div class="logout">
+                <a href="{% url 'home' %}">Log Out</a>
+            </div>
+        </header>
+
+        <main>
+
+            <div class="content">
+                <div class="image">
+                    <img src="{% static 'images/cerebroHome.png' %}" alt="Meditation Brain">
+                </div>
+                <div class="options">
+                    <a href="{% url 'meditationEasy' %}" class="option">Sleep Meditation - Easy</a>
+                    <a href="{% url 'meditationIntermediate' %}" class="option">Sleep Meditation - Intermediate</a>
+                    <a href="{% url 'meditationAdvanced' %}" class="option">Sleep Meditation - Advanced</a>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

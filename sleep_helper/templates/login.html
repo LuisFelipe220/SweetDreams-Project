@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Sweet Dreams</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="{% static 'images/SweetDreamsLogo.png' %}" alt="Logo Sweet Dreams" class="logo">
+        </header>
+        <main>
+            <h1 class="title">Login</h1>
+            {% if error %}
+                <p class="error">{{ error }}</p>
+            {% endif %}
+            <form method="POST" class="form">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit" class="btn-submit">Login</button>
+            </form>
+            <p class="register-link">Não tem uma conta? <a href="{% url 'register' %}">Cadastre-se</a></p>
+        </main>
+        <img src="{% static 'images/cerebroLogin.png' %}" alt="Cérebro Ilustrado" class="illustration">
+    </div>
+</body>
+</html>

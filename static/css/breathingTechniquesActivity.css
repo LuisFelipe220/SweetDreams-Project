@@ -1,0 +1,19 @@
+body {
+     background-color: #aee4bd;
+     color: white;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     margin: 0;
+     font-family: Arial, sans-serif;
+        }
+.video-container {
+    width: 560px;
+    max-width: 100%;
+}
+
+iframe {
+    width: 500;
+    height: auto;
+}

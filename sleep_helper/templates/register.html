@@ -1,0 +1,26 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="{% static 'css/register.css' %}">
+</head>
+<body>
+    <div class="signup-container">
+        <div class="logo">
+            <img src="{% static 'images/SweetDreamsLogo.png' %}" alt="Sweet Dreams Logo">
+        </div>
+        <h1>Cadastro</h1>
+        <form method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Cadastrar</button>
+        </form>
+        <p>Já tem uma conta? <a href="{% url 'login' %}">Faça login</a></p>
+        <div class="mascot">
+            <img src="{% static 'images/cerebroCadastro.png' %}" alt="Brain Mascot">
+        </div>
+    </div>
+</body>
+</html>

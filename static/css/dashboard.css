@@ -1,0 +1,93 @@
+/* Estilo global */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #aee4bd; /* Cor de fundo clara */
+    text-align: center;
+}
+
+/* Cabeçalho */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: absolute; /* Para ajustar a posição do log out */
+    top: 30px; /* Distância do topo */
+    width: 100%;
+}
+
+.header .logout {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #60814b;
+}
+
+/* Container da logo principal */
+.logo-container {
+    margin-top: 80px; /* Ajuste da distância para melhor visualização */
+}
+
+.logo-container img {
+    width: 150px;
+}
+
+/* Conteúdo principal */
+.content {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Botões e imagem do cérebro alinhados */
+.button-and-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    margin: 15px;
+    padding: 15px 30px;
+    background-color: #fff;
+    color: #ff69b4;
+    border: 2px solid #ff69b4;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #ff69b4;
+    color: #fff;
+}
+
+/* Estilo da imagem do cérebro */
+.brain-image {
+    width: 150px; /* Tamanho da imagem */
+    margin-left: 20px; /* Espaço entre a imagem e a palavra OR */
+    margin-right: 20px; /* Espaço entre a imagem e o botão seguinte */
+}
+
+/* Container para a palavra OR e a imagem */
+.or-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+/* Texto "OR" */
+.or-text {
+    font-size: 2.5rem;
+    margin-right: 200px; /* Espaço entre o texto "OR" e a imagem */
+    width: 400px;
+    color: #ff69b4;
+    font-family: Adam Script;
+}

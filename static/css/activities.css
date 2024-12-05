@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #aee4bd;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 100px;
+    margin-right: 10px;
+}
+
+.logout a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #4caf50;
+    font-weight: bold;
+}
+
+.title {
+    margin-bottom: 40px;
+}
+
+.title img {
+    width: 300px;
+    height: auto;
+}
+
+.activity-options {
+    display: flex;
+    justify-content: space-around;
+}
+
+.option {
+    text-align: center;
+}
+
+.option img {
+    width: 180px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.option p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff6699;
+}

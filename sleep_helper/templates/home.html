@@ -1,0 +1,46 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Dreams</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <header>
+        <img src="{% static 'images/SweetDreamsLogo.png' %}" alt="Logo Sweet Dreams" class="logo">
+        <nav>
+            <ul>
+                <li><a href="{% url 'login' %}" class="btn-nav">Login</a></li>
+                <li class="register-link"><a href="{% url 'register' %}">Cadastre-se</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="intro">
+            <img src="{% static 'images/cerebroHome.png' %}" alt="Ilustração Cérebro" class="main-image">
+            <h1>Welcome to Sweet Dreams</h1>
+            <p>Where your nights gain more quality and your days, more energy</p>
+        </section>
+                <section id="about">
+            <h2>Introdution</h2>
+            <p>
+                The main objective is to develop a website that is capable of creating a better routine,
+                including meditation, white noise or even consultations with people specialized in the area.
+                To improve the quality of students' sleep so they can have a better quality of life.
+            </p>
+        </section>
+        <section id="more">
+            <h2>About Us</h2>
+            <p>
+                At SweetDreams, we believe that a good night’s sleep is the foundation for a balanced and productive life.
+                Our mission is to help students organize their routines, improve sleep quality, and achieve physical and
+                mental well-being. By combining technology and science, we provide interactive tools such as guided
+                meditation, relaxing sounds, and expert support to make your journey to restful sleep more accessible
+                and effective. Our goal is to inspire positive changes in your daily habits, promoting better health,
+                energy, and readiness to face life’s challenges.
+            </p>
+        </section>
+    </main>
+</body>
+</html>

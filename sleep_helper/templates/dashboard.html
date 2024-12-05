@@ -1,0 +1,35 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Dreams - Dashboard</title>
+    <link rel="stylesheet" href="{% static 'css/dashboard.css' %}">
+</head>
+<body>
+    <div class="header">
+        <a href="{% url 'home' %}" class="logout">Log Out</a>
+    </div>
+
+    <div class="logo-container">
+        <img src="{% static 'images/SweetDreamsLogo.png' %}" alt="Sweet Dreams">
+    </div>
+
+<div class="content">
+    <div class="button-container">
+        <a href="{% url 'activities' %}" class="btn">Activities</a>
+    </div>
+
+    <div class="or-container">
+        <img src="{% static 'images/cerebroDashboard_Feedback.png' %}" alt="Cérebro Ilustrado" class="brain-image">
+        <p class="or-text">OR</p>
+    </div>
+
+    <div class="button-container">
+        <a href="{% url 'feedback' %}" class="btn">Feedback</a>
+    </div>
+</div>
+
+
+</body>
+</html>

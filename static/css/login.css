@@ -1,0 +1,107 @@
+/* Fundo da página */
+body {
+    background-color: #aee4bd; /* Verde claro */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo do cabeçalho */
+header {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+header .logo {
+    height: 100px; /* Tamanho da logo */
+}
+
+/* Centralizar conteúdo */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+/* Título */
+.title {
+    color: #ff69b4; /* Rosa do título */
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Formulário */
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.form label {
+    font-size: 1em;
+    color: #60814b; /* Verde escuro */
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.form input {
+    padding: 10px;
+    font-size: 1em;
+    border: 2px solid #60814b;
+    border-radius: 8px;
+    outline: none;
+}
+
+.form input:focus {
+    border-color: #ff69b4; /* Rosa */
+    box-shadow: 0 0 5px #ff69b4;
+}
+
+/* Botão de login */
+.btn-submit {
+    background-color: #ff69b4; /* Rosa */
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #ff85c2; /* Rosa claro */
+}
+
+/* Link de cadastro */
+.register-link {
+    margin-top: 10px;
+    color: #60814b; /* Verde escuro */
+    font-size: 1em;
+}
+
+.register-link a {
+    color: #ff69b4;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+/* Imagem ilustrativa */
+.illustration {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 150px;
+    width: auto;
+}

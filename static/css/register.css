@@ -1,0 +1,68 @@
+.signup-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Garante que o container ocupe toda a altura da tela */
+    background-color: #aee4bd; /* Fundo */
+    padding: 20px;
+}
+
+.logo {
+    position: absolute; /* Permite posicionamento relativo à janela */
+    top: 10px; /* Distância do topo */
+    left: 10px; /* Distância da borda esquerda */
+    max-width: 100px; /* Limita o tamanho da imagem para manter o layout limpo */
+}
+
+.logo img {
+    max-width: 100%; /* Garante que a imagem se ajuste corretamente */
+    height: auto; /* Mantém as proporções da imagem */
+}
+
+h1 {
+    font-family: 'Cursive', sans-serif;
+    font-size: 2.5em;
+    color: #ff69b4; /* Rosa forte */
+    margin-bottom: 15px;
+}
+
+form {
+    width: 100%;
+    max-width: 400px; /* Limita a largura do formulário */
+    text-align: left;
+}
+
+form input,
+form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    background-color: #ff69b4; /* Botão rosa */
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #e058a2; /* Cor mais escura ao passar o mouse */
+}
+
+.mascot {
+    position: absolute; /* Permite posicionamento relativo à janela */
+    bottom: 10px; /* Distância da borda inferior */
+    right: 10px; /* Distância da borda direita */
+    max-width: 150px; /* Limita o tamanho da imagem */
+}
+
+.mascot img {
+    max-width: 100%; /* Garante ajuste proporcional */
+    height: auto; /* Mantém as proporções */
+}

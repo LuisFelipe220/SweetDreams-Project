@@ -1,0 +1,41 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activities</title>
+    <link rel="stylesheet" href="{% static 'css/activities.css' %}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="{% static 'images/SweetDreamsLogo.png' %}" alt="Sweet Dreams Logo">
+            </div>
+            <div class="logout">
+                <a href="{% url 'home' %}">Log Out</a>
+            </div>
+        </header>
+
+        <main>
+            <div class="title">
+                <img src="{% static 'images/imagemActivity.png' %}" alt="Activities">
+            </div>
+            <div class="activity-options">
+                <a href="{% url 'meditation' %}" class="option">
+                    <img src="{% static 'images/cerebroHome.png' %}" alt="Meditation">
+                    <p>Meditation</p>
+                </a>
+                <a href="{% url 'physicalActivity' %}" class="option">
+                    <img src="{% static 'images/cerebroCorrendoActivity.png' %}" alt="Physical Activity">
+                    <p>Physical Activity</p>
+                </a>
+                <a href="{% url 'relaxButton' %}" class="option">
+                    <img src="{% static 'images/cerebroRelaxActivity.png' %}" alt="Relax Button">
+                    <p>Relax Button</p>
+                </a>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
